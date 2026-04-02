@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="planner">
+
+  <div class="header">
+    <h1>TO DO LIST</h1>
+    <span id="date"></span>
+  </div>
+
+  <!-- TOP PRIORITY -->
+  <div class="top-priority">
+    <h3>TOP PRIORITY</h3>
+    <form id="priority-form">
+      <input type="text" id="priority-input" placeholder="Ajouter priorité">
+    </form>
+    <ul id="priority-list"></ul>
+  </div>
+
+  <div class="grid">
+
+    <!-- TODAY -->
+    <div class="box purple">
+      <h3>GET DONE TODAY</h3>
+      <form id="today-form">
+        <input type="text" id="today-input" placeholder="Ajouter tâche">
+      </form>
+      <ul id="today-list"></ul>
+    </div>
+
+    <!-- DON'T FORGET -->
+    <div class="box pink">
+      <h3>DON'T FORGET</h3>
+      <form id="note-form">
+        <input type="text" id="note-input" placeholder="Ajouter note">
+      </form>
+      <ul id="note-list"></ul>
+    </div>
+
+    <!-- WEEK -->
+    <div class="box yellow">
+      <h3>THIS WEEK</h3>
+      <form id="week-form">
+        <input type="text" id="week-input" placeholder="Ajouter tâche">
+      </form>
+      <ul id="week-list"></ul>
+    </div>
+
+    <!-- APPOINTMENTS -->
+    <div class="box mint">
+      <h3>APPOINTMENTS</h3>
+      <form id="app-form">
+        <input type="text" id="app-input" placeholder="Ajouter RDV">
+      </form>
+      <ul id="app-list"></ul>
+    </div>
+
+    <!-- EVENTS -->
+    <div class="box mint">
+      <h3>EVENTS</h3>
+      <form id="event-form">
+        <input type="text" id="event-input" placeholder="Ajouter event">
+      </form>
+      <ul id="event-list"></ul>
+    </div>
+
+    <!-- TOMORROW -->
+    <div class="box pink">
+      <h3>TOMORROW</h3>
+      <form id="tomorrow-form">
+        <input type="text" id="tomorrow-input" placeholder="Ajouter tâche">
+      </form>
+      <ul id="tomorrow-list"></ul>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
