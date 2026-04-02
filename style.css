@@ -100,3 +100,54 @@ button {
   cursor: pointer;
   padding: 3px 8px;
 }
+
+/* ===== RESPONSIVE ===== */
+
+/* Mobile small screens */
+@media (max-width: 600px) {
+  .planner {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* 1 colonne sur mobile */
+  }
+
+  .box h3 {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+}
+
+/* Tablet screens */
+@media (min-width: 601px) and (max-width: 900px) {
+  .planner {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 12px;
+  }
+
+  .box h3 {
+    font-size: 13px;
+  }
+
+  input {
+    font-size: 15px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+}
